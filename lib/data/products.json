@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "name": "Professional Web Development",
+      "sku": "SRV-WEB-001",
+      "price": 2500,
+      "stock": 999,
+      "category": "Services"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "invoices": [
+    {
+      "id": "inv-001",
+      "number": "INV-2024-001",
+      "date": "2024-03-20",
+      "dueDate": "2024-04-19",
+      "customerId": "cust-001",
+      "items": [
+        {
+          "id": "item-001",
+          "description": "Web Development Services",
+          "quantity": 1,
+          "unitPrice": 2500,
+          "total": 2500
+        }
+      ],
+      "status": "pending",
+      "total": 2500,
+      "notes": "Net 30 payment terms"
+    }
+  ]
+}

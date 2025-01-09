@@ -1,0 +1,12 @@
+{
+  "customers": [
+    {
+      "id": "cust-001",
+      "name": "Acme Corporation",
+      "email": "billing@acme.com",
+      "phone": "+1 (555) 123-4567",
+      "address": "123 Business Ave, Suite 100, New York, NY 10001",
+      "company": "Acme Corp"
+    }
+  ]
+}
