@@ -30,12 +30,12 @@ Prima is a modern, feature-rich admin panel built with Next.js 13, TypeScript, a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/prima-admin.git
+   git clone https://github.com/mariussde/prima.git
    ```
 
 2. Install dependencies:
    ```bash
-   cd prima-admin
+   cd prima
    npm install
    ```
 
@@ -49,7 +49,7 @@ Prima is a modern, feature-rich admin panel built with Next.js 13, TypeScript, a
 ## Project Structure
 
 ```
-prima-admin/
+prima/
 ├── app/                    # Next.js 13 app directory
 │   ├── auth/              # Authentication pages
 │   ├── dashboard/         # Dashboard pages
