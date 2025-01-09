@@ -2,7 +2,7 @@
 
 Prima is a modern, feature-rich admin panel built with Next.js 13, TypeScript, and Tailwind CSS. It provides a comprehensive solution for managing invoices, customers, and business operations.
 
-![Prima Admin Panel](https://github.com/yourusername/prima-admin/raw/main/public/screenshot.png)
+![Prima Admin Panel](https://github.com/mariussde/prima/raw/main/public/screenshot.png)
 
 ## Features
 
