@@ -102,8 +102,8 @@ export default function DashboardPage() {
           <TableHeader>
             <TableRow>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Invoice Number</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Invoice Number</div>
                   <Input
                     placeholder="Filter number..."
                     value={filters.number}
@@ -113,8 +113,8 @@ export default function DashboardPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Date</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Date</div>
                   <Input
                     type="date"
                     value={filters.date}
@@ -124,8 +124,8 @@ export default function DashboardPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Due Date</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Due Date</div>
                   <Input
                     type="date"
                     value={filters.dueDate}
@@ -135,8 +135,8 @@ export default function DashboardPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Customer</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Customer</div>
                   <Input
                     placeholder="Filter customer..."
                     value={filters.customer}
@@ -146,8 +146,8 @@ export default function DashboardPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Status</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Status</div>
                   <Input
                     placeholder="Filter status..."
                     value={filters.status}
@@ -157,8 +157,8 @@ export default function DashboardPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Total</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Total</div>
                   <Input
                     placeholder="Filter total..."
                     value={filters.total}

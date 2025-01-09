@@ -89,8 +89,8 @@ export default function CustomersPage() {
           <TableHeader>
             <TableRow>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Name</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Name</div>
                   <Input
                     placeholder="Filter name..."
                     value={filters.name}
@@ -100,8 +100,8 @@ export default function CustomersPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Email</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Email</div>
                   <Input
                     placeholder="Filter email..."
                     value={filters.email}
@@ -111,8 +111,8 @@ export default function CustomersPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Phone</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Phone</div>
                   <Input
                     placeholder="Filter phone..."
                     value={filters.phone}
@@ -122,8 +122,8 @@ export default function CustomersPage() {
                 </div>
               </TableHead>
               <TableHead>
-                <div className="space-y-1">
-                  <div>Company</div>
+                <div className="space-y-2 py-2">
+                  <div className="pt-1">Company</div>
                   <Input
                     placeholder="Filter company..."
                     value={filters.company}
