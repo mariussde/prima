@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Home, HelpCircle, Settings, Building2, User, Bell, LogOut } from 'lucide-react';
+import { Home, HelpCircle, Settings, Building2, User, Bell, LogOut, ChevronDown } from 'lucide-react';
 import { ThemeToggle } from './theme-toggle';
 import { Button } from './ui/button';
 import {
@@ -11,11 +11,13 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from './ui/dropdown-menu';
+import { useState } from 'react';
 
 const companies = ['Antwerp', 'Spain', 'Italy'];
 
 export function TopBar({ currentPath }: { currentPath: string }) {
   const router = useRouter();
+  const [currentCompany, setCurrentCompany] = useState(companies[0]);
 
   return (
     <div className="border-b">
@@ -24,14 +26,22 @@ export function TopBar({ currentPath }: { currentPath: string }) {
         <div className="ml-auto flex items-center space-x-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline">
-                Change Company
-                <Building2 className="h-4 w-4 ml-2" />
+              <Button variant="outline" className="min-w-[200px] justify-between">
+                <span className="flex items-center">
+                  <Building2 className="h-4 w-4 mr-2" />
+                  Current Company: {currentCompany}
+                </span>
+                <ChevronDown className="h-4 w-4 ml-2" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               {companies.map((company) => (
-                <DropdownMenuItem key={company}>{company}</DropdownMenuItem>
+                <DropdownMenuItem 
+                  key={company}
+                  onClick={() => setCurrentCompany(company)}
+                >
+                  {company}
+                </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
