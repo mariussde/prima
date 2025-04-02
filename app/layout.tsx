@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Prima Admin Panel',
-  description: 'Invoice Management System',
+  description: 'Invoice Management System'
 };
 
 export default function RootLayout({
