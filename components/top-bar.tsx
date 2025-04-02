@@ -12,12 +12,18 @@ import {
   DropdownMenuSeparator,
 } from './ui/dropdown-menu';
 import { useState } from 'react';
+import { signOut } from 'next-auth/react';
 
 const companies = ['Antwerp', 'Spain', 'Italy'];
 
 export function TopBar({ currentPath }: { currentPath: string }) {
   const router = useRouter();
   const [currentCompany, setCurrentCompany] = useState(companies[0]);
+
+  const handleLogout = async () => {
+    await signOut({ redirect: false });
+    router.push('/auth/login');
+  };
 
   return (
     <div className="border-b">
@@ -75,7 +81,10 @@ export function TopBar({ currentPath }: { currentPath: string }) {
                 Notifications
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-red-600">
+              <DropdownMenuItem 
+                className="text-red-600"
+                onClick={handleLogout}
+              >
                 <LogOut className="h-4 w-4 mr-2" />
                 Logout
               </DropdownMenuItem>
